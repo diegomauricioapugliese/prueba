@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hojas de Estilo</title>
+    <style>
+        .verde {
+            color: rgb(225, 233, 207);
+            background-color: green;
+            
+        }
+        .grande {
+            font-size: 30px;
+
+        }
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        /* asdfsadf */
+
+        h2, #intro {
+            font-size: 25px;
+        }
+        div p {
+            background-color: blue;
+            color: white;
+        }
+
+        ol > li {
+            color: red;
+        }
+
+        div + p {
+            background-color: seagreen;
+        }
+
+        div ~ p {
+            font-size: 26px;
+        }
+
+        a[target] {
+            color: green;
+
+        }
+
+        a[target="_self"] {
+            color: brown;
+
+        }
+
+        p[class^="destacado" ] {
+            background-color: blue;
+        }
+
+        a[href$=".es"] {
+            background-color: yellow;
+        }
+        li[title*="cur"]{
+            background-color: greenyellow;
+        }
+
+        p[class~="destacado"]{
+            background-color: greenyellow;
+        }
+        p[class|="texto"]{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="textodestacado">Lorem ipsum <em> totoi</em> dolor sit, amet consectetur adipisicing elit. Optio quidem accusamus dolorem, corporis eveniet magnam assumenda eaque est fuga molestias sapiente quaerat temporibus, et ipsa fugit? Itaque quaerat amet error?</p>
+    <p class="destacado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, qui. Magnam unde quo autem sapiente explicabo accusamus velit itaque impedit in dignissimos eum, laboriosam, est perferendis, aliquid cum et. Facere.</p>
+    <ul>
+        <li title="curso  php">primer</li>
+        <li title="curso  c++">otro</li>
+        <li title="curso  java ">otro mas</li>
+        <li title="aprende lindo ">otro lindo</li>
+    </ul>
+    <a href="google.com">Google</a>
+    <a href="yahooo.com">yahoo</a>
+    <a href="google.com.es">GoogleEs</a>
+    <a href="yahooo.com.es">yahooEs</a>
+    <ol>
+        <li>vegetales</li>
+        <li>frutas</li>
+        <ul>
+            <li>manzanas</li>
+            <li>bananas</li>
+            <li>mandarinas</li>
+        </ul>
+        <li>verduras</li>
+    </ol>
+
+    <a href="">Enlace 1</a> <br>
+    <a href="" target="_blank">Enlace 1</a> <br>
+    <a href="" target="_self">Enlace 1</a>
+
+    <br>
+    <p class="destacado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga exercitationem similique, aliquam animi soluta cum aliquid. Quasi dolorum exercitationem necessitatibus odio mollitia quidem, eveniet omnis ad aliquid consequatur tenetur sunt.</p>
+
+    <p class="especial destacado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas, accusantium esse obcaecati quia dolores, in enim, architecto quidem iste ullam voluptatem itaque fugiat qui numquam! Debitis vel quod adipisci?</p>
+
+    <p class="destacado principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, perspiciatis voluptates? Eos officia facere dolorem adipisci, sapiente soluta, itaque hic numquam blanditiis at debitis natus asperiores enim ex voluptates velit.</p>
+
+    <h1>Encabezado</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut recusandae nam ipsa similique dolorum suscipit quis provident, rem facere ad ullam voluptatum facilis reiciendis quo quasi ipsum fuga eligendi debitis!</p>
+    <a href="">Leer más...</a>
+
+    <h2>Encabezado nivel 2</h2>
+    <p id="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas numquam deleniti natus, iusto voluptatem at ratione praesentium, molestiae consequuntur illum pariatur repellendus. Facere nam quam laudantium tempore atque blanditiis incidunt!</p>
+    <br>
+
+    <div>
+        <h2>otro encabezado</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta sunt asperiores harum at repellendus aut saepe quis reiciendis fugiat doloribus, nobis corporis facilis odit deserunt alias, et repellat ipsam quibusdam.</p>
+    </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore earum soluta in ipsum eligendi quo facere officia quod labore, asperiores quibusdam ut sed illo doloremque. Nam assumenda hic provident maxime.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fuga dolores facere expedita aspernatur, tempore iusto possimus natus commodi? Voluptates inventore aperiam veniam dignissimos provident? Aperiam dolorum harum velit repellendus.</p>
+
+    <button class="verde grande">Presione aqui</button>
+    
+</body>
+</html>

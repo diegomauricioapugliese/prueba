@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulario</h2>
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <input type="submit" name="enviar_datos" value="Enviar formulario">
+        <input type="reset" name="enviar_datos" value="Resetear formulario">
+        <input type="button" name="" value="Pulsar">
+
+        <button type="button">Otro <b>  Boton</b></button>
+
+        Comentario <br>
+
+        <textarea name="mensaje"  rows="10" cols="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum libero ratione suscipit. Ratione, praesentium inventore quas quos doloremque, totam reiciendis omnis quo ullam quaerat aliquam sit minima ipsam recusandae. Fuga.</textarea>
+
+        Pais    <br>
+        <select name="pais[]" multiple>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile" selected>Chile</option>
+        </select>
+
+        Buscar: <input type="search" name="Buscar" placeholder="Buscar...">
+
+        <h3>Sube Archivos</h3>
+        subite aqui: <input type="file" name="archivo" id="fecha"  size="50">
+
+
+        <h3>Fecha</h3>
+        <label for="fecha">FechaNacimiento</label>
+        <input type="date" name="fecha_nacimiento[]"  size="50" multiple>
+
+        <h3>Casillas</h3>
+        <input type="checkbox" name="casilla"  value="Uno" > Uno <br>
+        <input type="checkbox" name="casilla"  value="dos" checked > Dos <br>
+
+        <h3>Tipo</h3>
+        <input type="radio" name="variable"  value="a" > Uno <br>
+        <input type="radio" name="variable"  value="b" > otro <br>
+        <input type="radio" name="variable"  value="c" > y otro
+
+        <br>
+        <label for="lNombre">Nombre</label>
+        <input type="text" name="nombre"  id="lNombre">
+
+        <br> <br>
+        <label for="lDireccion">Direccion</label>
+        <input type="text" name="direccion" id="lDireccion" placeholder="Aqui va una idea">
+
+        <br> <br>
+        <label for="lemail">email</label>
+        <input type="email" name="email" id="email" >
+
+        <label for="pwd">pwd</label>
+        <input type="password" name="pwd" id="pwd" >
+
+    </form>
+
+    
+    
+</body>
+</html>
