@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts-googleapis.com/css?family=orbitron:400,500|Roboto" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Animaciones CSS</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body    {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        /* Como crear animacion de elementos */
+
+        h2 {
+            margin-top: 15rem;
+            font-size: 3rem;
+            -webkit-animation-name: efecto-rebote;
+            animation-name: efecto-rebote;
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+            -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+            -webkit-animation-iteration-count: 5;
+            animation-iteration-count: 5;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+
+        }
+
+        @-webkit-keyframes efecto-rebote {
+            0% {-webkit-transform: translateY(50px);transform: translateY(50px);}
+            50% {color: black;}
+            100% {-webkit-transform: translateY(-200px) scaleY(1.5);transform: translateY(-200px) scaleY(1.5); color: red;}
+        }
+        @keyframes efecto-rebote {
+            0% {-webkit-transform: translateY(50px);transform: translateY(50px);}
+            50% {color: black;}
+            100% {-webkit-transform: translateY(-200px) scaleY(1.5);transform: translateY(-200px) scaleY(1.5); color: red;}
+        }
+
+        /* Como crear un spinner basico */
+        #elemento {
+            width: 200px;
+            height: 200px;
+            border: 5px double orangered;
+            margin: 0 left 90px;
+            animation: spinner 2s 1s ease-out infinite alternate-reverse;
+        }
+
+        @-webkit-keyframes spinner {
+            0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+            30% {-webkit-transform: rotateX(180deg);transform: rotateX(180deg); border: 1px solid orangered;}
+            80% {-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
+            100% {-webkit-transform: rotateZ(360deg);transform: rotateZ(360deg); background-color: orangered;}
+        }
+
+        @keyframes spinner {
+            0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+            30% {-webkit-transform: rotateX(180deg);transform: rotateX(180deg); border: 1px solid orangered;}
+            80% {-webkit-transform: rotateY(180deg);transform: rotateY(180deg);}
+            100% {-webkit-transform: rotateZ(360deg);transform: rotateZ(360deg); background-color: orangered;}
+        }
+
+        /* Cómo crear multiples animaciones en un mismo elemento */
+
+        #animacion-multiple {
+            background-color: gold;
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            margin-bottom: 300px;
+            animation: cambio-color 3s ease infinite alternate, mover-elemento 2s ease-out infinite alternate-reverse;
+        }
+
+        @-webkit-keyframes cambio-color {
+            0%, 100% {background-color: gold;}
+            86% {background-color: green;}
+            
+        }
+
+        @keyframes cambio-color {
+            0%, 100% {background-color: gold;}
+            86% {background-color: green;}
+            
+        }
+
+        @-webkit-keyframes mover-elemento {
+            0% {-webkit-transform: translateX(900px);transform: translateX(900px);}
+            
+        }
+
+        @keyframes mover-elemento {
+            0% {-webkit-transform: translateX(900px);transform: translateX(900px);}
+            
+        }
+
+
+</style>
+</head>
+<body>
+        <h1>Como crear animaciones básicas</h1>
+        <h2>Este texto rebota</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi libero asperiores error dolorem debitis reprehenderit nulla doloribus explicabo doloremque, dolores rerum necessitatibus, molestias qui? Iste dolores maxime iure dolorum exercitationem?</p>
+
+        <div id="animacion-multiple"></div>
+        <div id="elemento"></div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+    <title>Còmo aplicar Media Queries</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body    {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.125rem;
+        }
+        img {
+            width: 30%;
+            height: auto;
+            float: left;
+            margin: 0.3em 0.9em 0.3em 0;
+        }
+
+        /* Media queries */
+        @media print {
+            body {
+                color: blue;
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 501px) and (max-width: 992px), (min-width: 1100px) and (max-width: 1200px){
+            body {
+                background-color: #e0e0e0;
+
+            }
+
+            div {
+                margin: 0 0.90em;
+                
+            }
+            img {
+                width: 45%;
+
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1.05rem;
+            }
+
+            @media not screen and (max-width: 500px) and (orientation: landscape) {
+                div {
+                    margin: 0 0.95em;
+                }
+
+                img {
+                    width: 100%;
+                    margin-bottom: 0.95em;
+                }
+
+                h1 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: 0.95rem;
+                    line-height: 1.5;
+                    text-align: justify;
+
+                }
+
+
+                
+            }
+        }
+
+
+</style>
+</head>
+<body>
+    <div>
+        <h1>Consejos para adiestrar tu caballito de mar</h1>
+        <img src="./arch/descarga.jpeg" alt="imagen_perro">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita aperiam, facere laboriosam, non quia obcaecati sequi commodi magnam impedit maiores suscipit dolorum sint temporibus! Repellat est dicta voluptate nesciunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita aperiam, facere laboriosam, non quia obcaecati sequi commodi magnam impedit maiores suscipit dolorum sint temporibus! Repellat est dicta voluptate nesciunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita aperiam, facere laboriosam, non quia obcaecati sequi commodi magnam impedit maiores suscipit dolorum sint temporibus! Repellat est dicta voluptate nesciunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita aperiam, facere laboriosam, non quia obcaecati sequi commodi magnam impedit maiores suscipit dolorum sint temporibus! Repellat est dicta voluptate nesciunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita aperiam, facere laboriosam, non quia obcaecati sequi commodi magnam impedit maiores suscipit dolorum sint temporibus! Repellat est dicta voluptate nesciunt?</p>
+    </div>
+
+
+</body>
+</html>

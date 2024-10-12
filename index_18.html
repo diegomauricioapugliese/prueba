@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades Display y Visibility</title>
+    <style>
+
+        html, body {
+            height: 100%;
+        }
+
+        /* Ocultar elementos */
+
+        #texto-invisible {
+            visibility: hidden;
+        }       
+
+        #ocultar-texto {
+            color: #ff0000;
+            display: none;
+        }  
+        /* Modificar el comportamiento de los elementos con la propiedad display     */
+        a {
+            background-color: #008000;
+            color: #fff;
+            width: 230px;
+            height: 42px;
+            margin: 12px 0;
+            display: block;
+  
+        } 
+        .caja {
+            background-color: #00ff00;
+            color: #fff;
+            width: 87%;
+            height: 130px;
+            margin: 20px 0;
+            /* display: inline; */
+
+        }
+
+        .enlineabloque {
+            background-color: #008000 ;
+            border: 1px solid;
+            color: #fff;
+            width: 25%;
+            height: 145px;
+            padding: 5px 0 ;
+            margin: 4px 0;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Como controlar la visualizaión de elementos</h1>
+
+    <h2>Propiedad Visibility</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio eius aut maiores facere qui consequuntur nulla officiis fugiat modi enim accusamus earum odit explicabo quibusdam, rem architecto voluptates voluptatibus quia!</p>
+    <p id="texto-invisible">Quam, quae! Ullam molestiae facere aut esse obcaecati laboriosam ipsum in enim doloribus dicta, explicabo sed. Ut laborum, ipsa voluptas obcaecati earum deserunt quis quisquam neque optio. Assumenda, repudiandae veniam!</p>
+    <p>Corporis deserunt necessitatibus distinctio excepturi a, iure, iusto, aperiam porro ipsa dicta aspernatur provident id voluptatem adipisci maxime in? Optio sint qui iusto fuga est inventore quisquam voluptates ipsa autem.</p>
+
+    <h2>Propiedad Display: none</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima laborum dolorum asperiores magnam iste dolorem, error saepe in, cumque eaque unde perspiciatis eos. Dolorum, nihil laudantium reprehenderit suscipit qui itaque!</p>
+    <p id="ocultar-texto">Placeat repellendus excepturi ducimus asperiores nihil alias minus ut soluta voluptatibus. Consectetur fugiat accusantium quae! Officiis nemo quisquam impedit repudiandae! Aperiam saepe eos sapiente voluptatem mollitia architecto quo, exercitationem libero!</p>
+    <p>Repudiandae illo inventore sint unde illum numquam. Mollitia corporis ipsam laudantium itaque aspernatur, odit enim repellat officia deleniti voluptate nam atque dolor error fugit doloribus at voluptas ratione harum magni.</p>
+
+    <h2>Propiedad Display: block</h2>
+    <a href="">Inicio</a>
+    <a href="">Servicio</a>
+    <a href="">Contacto</a>
+
+    <h2>Propiedad Display:  inline</h2>
+    <div class="caja">Ejemplo 1</div>
+    <div class="caja">Ejemplo 2</div>
+    <div class="caja">Ejemplo 3</div>
+
+    <h2>Propiedad Display: inline-block</h2>
+
+    <span class="enlineabloque">Caja 1</span>
+    <span class="enlineabloque">Caja 2</span>
+    <span class="enlineabloque">Caja 3</span>
+
+</body>
+</html>

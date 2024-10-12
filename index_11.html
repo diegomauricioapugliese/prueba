@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes en CSS</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.125rem;
+        }
+
+
+        div {
+            width: 100px;
+            height: 100px;
+            /* border-style: solid ;
+            border-width: 5px  2px 10px 12px;
+            border-color: brown red green black; */
+            border:  5px dotted red;
+            border-top: 2px solid blac;
+            border-bottom: 30px solid black;
+            border-right: 10px solid yellow;
+            border-left: 10px outset green;
+        }
+        #bordesredondeados {
+            width: 150px;
+            height: 120px;
+            border: 2px solid;
+            border-radius: 21px 92px 181px 130px / 5px 50px
+        }
+
+        #circulo {
+            width: 150px;
+            height: 150px;
+            border: 1px solid;
+            border-radius: 50%;
+
+        }
+        img {
+            width: 250px;
+            height: 250px;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <img src="/arch/scvision.jpg" alt="MiImagen">
+    <div id="circulo">       
+    </div>
+    <br><br>
+    <div id="bordesredondeados">
+    </div>
+    <br>
+    <br>
+    <div>
+    </div>
+ 
+</body>
+</html>

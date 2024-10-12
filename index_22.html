@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto lineal y radial</title>
+    <style>
+
+        html, body {
+            height: 100%;
+        }
+        body    {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        /* Degradado lineal */
+        #efecto-lineal {
+            width: 100%;
+            height: 260px;
+            background-color: #008000;
+            margin-bottom: 12px;
+            background-image: linear-gradient(to right bottom, #008000 30%, #000, #0000ff);
+        }
+
+        #efecto-lineal-angular {
+            width: 100%;
+            height: 230px;
+            background-color: #ff0000;
+            margin-bottom: 12px;
+            background-image: linear-gradient(-200deg, #ff0000, #ffff00);
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Colores degradados</h1>
+    
+    <h2>Efecto lineal</h2>
+    <div id="efecto-lineal"></div>
+
+    <h2>Unidades Angulares</h2>
+
+    <div id="efecto-lineal-angular"></div>
+
+</body>
+</html>

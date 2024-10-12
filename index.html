@@ -3,101 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PseudoClases</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+    <title>Modelo de Cajas Flexibles</title>
     <style>
-        a:link {
-            color: green;
+        html, body {
+            height: 100%;
+        }
+        
+        .cajaFlexible {
+            background-color: #069e27;
+            display: flex;
         }
 
-        a:visited{
-            color: red;
+        .cajaFlexible > div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 80px;
+            font-size: 3rem;
         }
 
-        a:hover {
-            font-size: 18px;
+        /* Flex-Grow */
+
+        .grow > div:nth-child(2) {
+            flex-grow: 1;
         }
 
-        a:active {
-            color: black;
+        .grow > div:nth-child(3) {
+            flex-grow: 2;
         }
 
-        button:hover {
-            color: rebeccapurple;
+        .grow > div:nth-child(5) {
+            flex-grow: 3;
         }
 
-        button:active {
-            color: blue;
+        /* flex-shrink */
+
+        .shrink {
+            width: 900px;
         }
 
-        input:enabled {
-            background-color: lightyellow;
+        .shrink > div:nth-child(4){
+            flex-shrink: 10;
         }
 
-        input:focus {
-            background-color: aqua;
+        /* flex-basis */
+        /* .basis {
+            flex-direction: column;
+        } */
+        .basis > div:nth-child(3){
+            flex-basis: 300px;
         }
 
-        input:disabled {
-            background-color: darkgrey;
-            cursor: not-allowed;
+        /* flex */
+
+        .flex > div:nth-child(2) {
+            flex: 0 10 400px;
         }
 
-        input[type="email"]:invalid {
-            border: 3px solid red;
-        }
-
-        input[type="radio"]:checked  + label {
-                    background-color: blue;
-                    color: white;
-        }
-
-        input[type="checkbox"]:checked + label {
-            color: red;
-        }
-
-    </style>
+</style>
 </head>
 <body>
-    <h1>Pseudo Clases</h1>
+    <h1>Flexbox</h1>
 
-    Género: <br>
-    <input type="radio" name="genero" id="hombre" value="masculino">
-    <label for="hombre">Masculino</label>
+    <h2>Propiedad flex-grow</h2>
 
-    <input type="radio" name="genero" id="mujer" value="femenino">
-    <label for="mujer">Femenino</label> <br><br>
+    <div class="cajaFlexible grow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
 
+    <h2>Propiedad flex-shrink</h2>
 
-    Pasatiempo: <br>
-    <input type="checkbox" name="pasatiempo1" id="hiking" value="excursionismo">
-    <label for="hiking">Excursionimos</label>
+    <div class="cajaFlexible shrink">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
 
-    <input type="checkbox" name="pasatiempo2" id="swiming" value="natacion">
-    <label for="swiming">Natacion</label> <br><br>
+    <h2>Propiedad flex-basis</h2>
 
-    <form action="">
-        <label for="suNombre">Nombre</label>
-        <input type="text" id="suNombre" size="50" disabled> <br><br>
+    <div class="cajaFlexible basis">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
 
-        <label for="suApellido">Apellido</label>
-        <input type="text" id="suApellido" size="50"> <br><br>
+    <h2>Propiedad flex</h2>
 
-        <label for="suMail">Mail</label>
-        <input type="email" id="suMail" size="50"> <br><br>
+    <div class="cajaFlexible flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
 
-
-
-                
-    </form>
-
-    <h2>PseudoClases orientadas a Formularios</h2>
-
-    <h2>Pseudo clases orientadas enlaces</h2>
-    <a href="#">Esto es un enlace</a>
-
-    <br><br>
-    <button>Pulsa aquì...</button>
-
-    
 </body>
 </html>

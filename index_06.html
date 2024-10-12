@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElementos</title>
+    <style>
+        p#primeraLetra::first-letter {
+            color: brown;
+            font-size: 30px;
+        }
+
+        p#primeraLinea::first-line {
+            color: rgb(65, 42, 165);
+            
+        }
+
+        /* Pseudo elementos before y after */
+
+        p.error::before {
+            content: url(arch/reload.png);
+            vertical-align: middle;
+            padding-right: 3px;
+        }
+
+        p.error span::after {
+            content: "ATENCIÓN:";
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+
+</style>
+</head>
+<body>
+    <h1>PseudoElementos Css</h1>
+    <p id="primeraLetra">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt dolorem voluptatum atque, tempore nobis porro voluptate, sint aperiam mollitia obcaecati consequuntur blanditiis! Cupiditate aspernatur dolorem quaerat enim ipsa assumenda? Earum.</p>
+    <p id="primeraLinea">Recusandae quisquam a esse eveniet accusantium ex excepturi? Rem ipsam, harum vel animi deserunt aliquid labore consectetur velit in incidunt accusamus architecto voluptate rerum eveniet assumenda nam vitae illo commodi?</p>
+    <p class="error"><span></span> saepe tempora alias, cum, neque in dolor repellendus quas iusto deserunt hic laboriosam eos facere consequatur. Inventore vel natus, eius libero eos corporis nisi numquam impedit repellat ducimus deleniti.</p>
+    <p class="error"><span></span> repudiandae aspernatur veritatis autem eveniet facere, dolorem ea aliquam laboriosam, aperiam doloremque, modi totam beatae. Dolores molestiae accusantium ipsam sint tempore maiores quo quisquam ipsa accusamus, sunt, a nisi.</p>
+    <p>Labore et cum debitis sit atque reprehenderit modi eveniet, doloribus in fuga deleniti porro laborum numquam odit? Impedit nemo recusandae iusto pariatur labore hic quos, eveniet, consequuntur dolores, ipsa repudiandae?</p>
+</body>
+</html>

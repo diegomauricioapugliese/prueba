@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos flotantes en CSS</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body      {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.125rem;
+        }
+        img {
+            width: 40%;
+            height: auto;
+            float: left;
+            margin: 0.3em 0.9em 0.3em 0em;
+            
+        }
+
+        footer {
+            width: 95%;
+            height: auto;
+            font-size: 0.95rem;
+            margin-top: 2em;
+            padding: 0.2em 1em 2em;
+            border: 1px solid;
+            clear: both;
+        }
+
+        /* Crear contenido en columnas */
+
+        .caja {
+            width: 33.33%;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Elementos Flotantes</h1>
+
+    <section>
+        <article>
+            <img src="./arch/scvision.jpg" alt="">
+            <h2>Como ver imagen</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate mollitia excepturi suscipit placeat maxime rerum voluptates ut quod, velit consectetur voluptatum ex beatae vel nihil quo libero aliquid pariatur? Ex!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptatem magnam praesentium magni quaerat consequuntur nulla vel porro doloribus quia, iure dolor similique blanditiis maxime provident quos voluptas eligendi fugit.</p>
+            <a href="">Leer más...</a>
+        </article>
+        <footer>
+            <h1>Etiquetas</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        </footer>
+    </section>
+    <h2>Contenido en columnas</h2>
+    <div class="caja">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic unde, suscipit velit laborum id ipsam recusandae vitae dolore fugiat ducimus? Autem id reiciendis dolore voluptatum rem quam, molestias eligendi aliquid.</p>
+        <a href="#">Leer más...</a>
+    </div>
+    <div class="caja">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic unde, suscipit velit laborum id ipsam recusandae vitae dolore fugiat ducimus? Autem id reiciendis dolore voluptatum rem quam, molestias eligendi aliquid.</p>
+        <a href="#">Leer más...</a>
+    </div>
+    <div class="caja">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic unde, suscipit velit laborum id ipsam recusandae vitae dolore fugiat ducimus? Autem id reiciendis dolore voluptatum rem quam, molestias eligendi aliquid.</p>
+        <a href="#">Leer más...</a>
+    </div>
+</body>
+</html>

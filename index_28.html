@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts-googleapis.com/css?family=orbitron:400,500|Roboto" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <title>Còmo aplicar estilos a las listas</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body    {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        /* Còmo aplicar estilos a las listas */
+
+        ul {
+            list-style-type: square;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #lista-imagen {
+            list-style: url(./arch/reload.png) inside;
+        }
+        #lista-posicion {
+            list-style-position: inside;
+        }
+
+        /* Como crear un menú vertical */
+
+        #menu-vertical {
+            background-color: #eee;
+            width: 50%;
+            list-style: none;
+            padding: 0 1px ;
+        }
+
+        #menu-vertical li {
+            border: 1px solid;
+        }
+
+        #menu-vertical li a {
+            color: #000;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+
+        }
+
+        #menu-vertical li a:hover {
+            background-color: #ccc;
+        }
+
+        #menu-vertical li a.actual {
+            background-color: #4c4eaf;
+            color: #fff;
+        }
+
+        /* Cómo crear un menu horizontal */
+
+        header ul {
+            background-color: #333;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        header ul li {
+            float: left;
+
+        }
+
+        header ul li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+
+        }
+
+        header ul li a:hover {
+            background-color: #111;
+
+        }
+
+        header ul li a.active {
+            background-color: #4c4eaf;
+        }
+</style>
+</head>
+<body>
+    <header>
+        <ul>
+            
+            <li><a href="" class="active"><i class="fa-solid fa-house"></i> -Inicio</a></li>
+            <li><a href=""><i class="fa-solid fa-people-group"></i> Acerca de</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </header>
+        <h1>Aplicar estilos a las listas de HTML</h1>
+
+        <h2>Listas desordenadas</h2>
+        <ul>
+            <li>Ensaladas</li>
+            <li>Pescados</li>
+            <li>Carnes</li>
+        </ul>
+
+        <h2>Listas ordenadas</h2>
+        <ol>
+            <li>Primero</li>
+            <li>Segundo</li>
+            <li>Tercero</li>
+        </ol>
+
+        <h2>Lista con imagenes</h2>
+        <ul id="lista-imagen">
+            <li>hmtl</li>
+            <li>css</li>
+            <li>javascript</li>
+        </ul>
+
+        <h2>Controlar la identacion de elementos sobre la lista</h2>
+        <ul id="lista-posicion">
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem sequi ullam in quae eius tempora nesciunt! Iste, cum consectetur. Minus nobis adipisci fuga eaque eos quo, cumque possimus tempore delectus!</li>
+            <li>Ab recusandae fugit molestias perferendis quos repellat facere non libero provident porro placeat id vel ullam tenetur pariatur in necessitatibus assumenda, magni eos est facilis iure nemo? Rem, iste quae.</li>
+            <li>Molestias labore maxime eaque ex, voluptas alias ratione animi hic cupiditate quia at dolorem eos laudantium. Obcaecati, ut! Tempore distinctio a facere exercitationem tempora neque quo? Quaerat totam exercitationem quam?</li>
+
+        </ul>
+
+        <h2>Menù vertical</h2>
+        <ul id="menu-vertical">
+            <li><a href="">Inicio</a></li>
+            <li><a href="" class="actual">Acerca de</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+
+</body>
+</html>

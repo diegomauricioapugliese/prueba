@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar el modelo de cajas de CSS CSS</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+        }
+
+        body      {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        .caja {
+            width: 380px;
+            float: left;
+            margin: 0px 10px;
+            border: 1px solid;
+            padding: 5px 12px;
+            /* box-sizing: border-box; */
+            /* margin-right: 10px;
+            border: 1px solid;
+            padding: 5px 12px; */
+        }
+
+        img {
+            width: 100%;
+            /* height: 100%; */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Como modificar el elelemtno de cajas tradicional</h1>
+
+ 
+    <h2>Contenido en columnas</h2>
+    <div class="caja">
+        <img src="./arch/scvision.jpg" alt="Imagen puesta">
+        <h2>Como mostrar imagen</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic unde, suscipit velit laborum id ipsam recusandae vitae dolore fugiat ducimus? Autem id reiciendis dolore voluptatum rem quam, molestias eligendi aliquid.</p>
+        <a href="#">Leer más...</a>
+    </div>
+    <div class="caja">
+        <img src="./arch/scvision.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic unde, suscipit velit laborum id ipsam recusandae vitae dolore fugiat ducimus? Autem id reiciendis dolore voluptatum rem quam, molestias eligendi aliquid.</p>
+        <a href="#">Leer más...</a>
+    </div>
+    <div class="caja">
+        <img src="./arch/scvision.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic unde, suscipit velit laborum id ipsam recusandae vitae dolore fugiat ducimus? Autem id reiciendis dolore voluptatum rem quam, molestias eligendi aliquid.</p>
+        <a href="#">Leer más...</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClases</title>
+    <style>
+        a:link {
+            color: green;
+        }
+
+        a:visited{
+            color: red;
+        }
+
+        a:hover {
+            font-size: 18px;
+        }
+
+        a:active {
+            color: black;
+        }
+
+        button:hover {
+            color: rebeccapurple;
+        }
+
+        button:active {
+            color: blue;
+        }
+
+        input:enabled {
+            background-color: lightyellow;
+        }
+
+        input:focus {
+            background-color: aqua;
+        }
+
+        input:disabled {
+            background-color: darkgrey;
+            cursor: not-allowed;
+        }
+
+        input[type="email"]:invalid {
+            border: 3px solid red;
+        }
+
+        input[type="radio"]:checked  + label {
+                    background-color: blue;
+                    color: white;
+        }
+
+        input[type="checkbox"]:checked + label {
+            color: red;
+        }
+
+        div#posicionElemento p:first-child {
+            color: blue;
+        }
+
+        div#posicionElemento p:last-child {
+            color: red;
+        }
+
+        div#posicionElemento p:nth-child(2) {
+            color: gold;
+        }
+
+        div#posicionElemento p:nth-child(3) {
+            color: aquamarine;
+        }
+
+        ul li:nth-child(even) {
+            color: darkgreen;
+        }
+
+        ul li:nth-child(odd ) {
+            color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Clases Prueba</h1>
+
+    <ul>
+        <li>Manzana</li>
+        <li>Peroa</li>
+        <li>Uva</li>
+        <li>Mandarina</li>
+        <li>Pepinillo</li>
+    </ul>
+
+    <div id="posicionElemento">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo minima rerum laborum dolore placeat dignissimos illum sed, quis, et iure necessitatibus blanditiis aliquam mollitia repellat eius tenetur voluptate, adipisci iusto?</p>
+        <p>Optio suscipit dolores ratione facere quibusdam itaque? Debitis exercitationem eaque veritatis? Minima veritatis, distinctio autem quidem at harum deleniti ad impedit illum officiis rem voluptate adipisci saepe, corporis similique placeat?</p>
+        <p>Voluptatibus, eos. Suscipit in quam error facilis ducimus a ad voluptatum voluptas excepturi nesciunt architecto, rerum hic assumenda laudantium debitis at reprehenderit tenetur quos corporis! Natus, temporibus ad! Magni, sunt.</p>
+        <p>Neque cum commodi quam eum placeat, repudiandae voluptatibus accusamus necessitatibus maiores nulla vitae assumenda ea quia minus laboriosam asperiores? Fugiat odio voluptatem natus minus eos accusantium rerum repudiandae, iusto quas?</p>
+    </div>
+
+    Género: <br>
+    <input type="radio" name="genero" id="hombre" value="masculino">
+    <label for="hombre">Masculino</label>
+
+    <input type="radio" name="genero" id="mujer" value="femenino">
+    <label for="mujer">Femenino</label> <br><br>
+
+
+    Pasatiempo: <br>
+    <input type="checkbox" name="pasatiempo1" id="hiking" value="excursionismo">
+    <label for="hiking">Excursionimos</label>
+
+    <input type="checkbox" name="pasatiempo2" id="swiming" value="natacion">
+    <label for="swiming">Natacion</label> <br><br>
+
+    <form action="">
+        <label for="suNombre">Nombre</label>
+        <input type="text" id="suNombre" size="50" disabled> <br><br>
+
+        <label for="suApellido">Apellido</label>
+        <input type="text" id="suApellido" size="50"> <br><br>
+
+        <label for="suMail">Mail</label>
+        <input type="email" id="suMail" size="50"> <br><br>
+
+
+
+                
+    </form>
+
+    <h2>PseudoClases orientadas a Formularios</h2>
+
+    <h2>Pseudo clases orientadas enlaces</h2>
+    <a href="#">Esto es un enlace</a>
+
+    <br><br>
+    <button>Pulsa aquì...</button>
+
+    
+</body>
+</html>

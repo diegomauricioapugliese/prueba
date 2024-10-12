@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacidad y transparencia</title>
+    <style>
+
+        html, body {
+            height: 100%;
+        }
+        body    {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        img {
+            width: 33%;
+            height: auto;
+
+        }
+
+        #imagen1 {
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+
+        #imagen1:hover {
+            opacity: 0.45;
+            filter: alpha(opacity=45);
+        } 
+
+
+        #imagen2 {
+            opacity: 0.4;
+            filter: alpha(opacity=40);
+        }
+
+        #imagen3 {
+            opacity: 0.1;
+            filter: alpha(opacity=10);
+        }
+
+        /* Cajas transparentes */
+
+        #caja {
+            background-color: #ffa500;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            padding: 50px;
+            width: 600px;
+            /* opacity: 0.45; */
+            /* filter: alpha(opacity=45); */
+            background-color: rgb(255,165,0, 0.45);
+        }
+
+    </style>
+</head>
+<body>
+   
+    <img src="./arch/descarga.jpeg" alt="Descripcion imagen" id="imagen1">
+    <img src="./arch/descarga.jpeg" alt="Descripcion imagen" id="imagen2">
+    <img src="./arch/descarga.jpeg" alt="Descripcion imagen" id="imagen3">
+
+    <div id="caja">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus, eligendi dolores architecto nisi accusantium. Sapiente quibusdam beatae atque expedita aspernatur, molestiae sint, dolores distinctio magni harum explicabo fuga numquam.
+    </div>
+
+</body>
+</html>

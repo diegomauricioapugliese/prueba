@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts-googleapis.com/css?family=orbitron:400,500|Roboto" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Transiciones CSS</title>
+    <style>
+
+        html, body {
+            height: 100%;
+        }
+        body    {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.125rem;
+        }
+
+        /* como aplicar un efecto de transicion */
+
+        div {
+            background-color: #008000;
+            width: 200px;
+            height: 200px;
+            margin: 90px auto;
+            /* transition-property: width, height, background-color, box-shadow;
+            transition-duration: 1.5s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s; */
+
+            transition: all 0.5s ease-in 1s;
+            -webkit-transition: all 0.5s ease-in 1s;
+            -o-transition: all 0.5s ease-in 1s;
+            transition: all 0.5s ease-in 1s;
+        }
+
+        div:hover {
+            background-color: #ffff00;
+            width: 500px;
+            height: 300px;
+            box-shadow: 2px 5px #ccc ;
+            /* transition-property: width, height, background-color, box-shadow;
+            transition-duration: 1.5s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s; */
+            
+            /* transition: width 1.5s ease-in 3s, height 1.5s ease-in 3s,  background-color 1.5s ease-in 3s, box-shadow 1.5s ease-in 3s; */
+
+            transition: all 0.5s ease-in 1s;
+            -webkit-transition: all 0.5s ease-in 1s;
+            -o-transition: all 0.5s ease-in 1s;
+            transition: all 0.5s ease-in 1s;
+        }
+
+    </style>
+</head>
+<body>
+        <div></div>
+</body>
+</html>
